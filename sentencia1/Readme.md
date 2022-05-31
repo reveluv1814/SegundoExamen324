@@ -4,4 +4,15 @@
 > CI: 9911843 LP
 ## 1. Realice mediante notación procesos y BPMN para la inscripción y recepción de frentes a la direccion de la carrera (dos notaciones).
 ### DIAGRAMA DE FLUJO DE PROCESOS
-![MIBASENEIl Modelo Físico](Examen324_Modelo1.png)
+![](Examen324_Modelo1.png)
+### DIAGRAMA DE FLUJO DE PROCESOS
+![](Examen324_2.png)
+
+
+
+el candidato        tribunal electoral
+ diagrama de procesoso
+
+rep frente recepciona llenar requisitos notificara revisan not
+
+motor motor interno 
