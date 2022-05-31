@@ -5,7 +5,7 @@
 ## 1. Realice mediante notación procesos y BPMN para la inscripción y recepción de frentes a la direccion de la carrera (dos notaciones).
 ### DIAGRAMA DE FLUJO DE PROCESOS
 ![](Examen324_Modelo1.png)
-### DIAGRAMA DE FLUJO DE PROCESOS
+### DIAGRAMA BPMN 
 ![](Examen324_2.png)
 
 
