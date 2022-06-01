@@ -20,7 +20,7 @@
         <nav class="nav">  
             <div class="container-nav">
                     <div class="col1">
-						<div id="logo"><a href="index.php"><img src="imagenes/logo1.png" alt=""></a></div>
+						<div id="logo"><a href="index.php"><img src="imagenes/logo3.png" alt=""></a></div>
 					</div>
                     <div class="col2">
                         <ul>
