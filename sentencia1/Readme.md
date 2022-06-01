@@ -11,7 +11,7 @@
 
 
 
-| **FlujoProceso** 	             	                      	          	                  	               	
+| **FlujoProceso** 	|             	|                      	|          	|                   	|               	|
 |:----------------:	|:-----------:	|:--------------------:	|:--------:	|:-----------------:	|:-------------:	|
 |     **Flujo**    	| **Proceso** 	| **ProcesoSiguiente** 	| **Tipo** 	|    **Pantalla**   	|    **Rol**    	|
 |        F1        	|      P1     	|          P2          	|     I    	|       Inicio      	|   RepFrente   	|
