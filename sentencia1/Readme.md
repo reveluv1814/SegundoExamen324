@@ -29,13 +29,49 @@
 
 
 
+| **FlujoProcesoCondicionante** 	|             	|               	|               	|
+|:-----------------------------:	|:-----------:	|:-------------:	|:-------------:	|
+|           **Flujo**           	| **Proceso** 	| **ProcesoSI** 	| **ProcesoNO** 	|
+|               F1              	|      P5     	|       P7      	|       P6      	|
 
 
 
 
+| **FlujoProcesoSeguimiento** 	|             	|                     	|             	|                 	|                	|              	|             	|
+|:---------------------------:	|:-----------:	|:-------------------:	|:-----------:	|:---------------:	|:--------------:	|:------------:	|:-----------:	|
+|          **Flujo**          	| **Proceso** 	| **NumeroSolicitud** 	| **Usuario** 	| **FechaInicio** 	| **HoraInicio** 	| **FechaFin** 	| **HoraFin** 	|
+|              F1             	|      P1     	|         1000        	|    msilva   	|    20/4/2022    	|      10:00     	|   20/4/2022  	|    14:00    	|
+|              F1             	|      P2     	|         1000        	|    msilva   	|    20/4/2022    	|      14:01     	|   22/4/2022  	|    10:00    	|
+|              F1             	|      P3     	|         1000        	|    msilva   	|    22/4/2022    	|      10:01     	|              	|             	|
+|              F2             	|      P1     	|         2020        	|    msilva   	|    20/4/2022    	|      10:10     	|   21/4/2022  	|    11:10    	|
+|              F2             	|      P2     	|         2020        	|    msilva   	|    21/4/2022    	|      11:11     	|              	|             	|
+|              F1             	|      P1     	|         1010        	|  jhuaranca  	|    11/4/2022    	|      09:00     	|   11/4/2022  	|    09:10    	|
+|              F1             	|      P2     	|          10         	|  jhuaranca  	|    11/4/2022    	|      09:11     	|              	|             	|
 
 
 
+| **Rol** 	|                 	|
+|:-------:	|:---------------:	|
+|  **id** 	| **rol** 	        |
+|    1    	|    RepFrente    	|
+|    2    	|    Secretaria   	|
+|    3    	|  TribElectoral  	|
+
+
+| **Usuario** 	|                 	|
+|:-----------:	|:---------------:	|
+|    **id**   	| **usuario** 	    |
+|      1      	|      msilva     	|
+|      2      	|    jhuaranca    	|
+|      3      	|      malcon     	|
+
+
+| **RolUsuario** 	|               	|
+|:--------------:	|:-------------:	|
+|    **IdRol**   	| **IdUsuario** 	|
+|        1       	|       1       	|
+|        1       	|       2       	|
+|        2       	|       3       	|
 
 el candidato        tribunal electoral
  diagrama de procesoso
