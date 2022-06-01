@@ -52,7 +52,7 @@
 
 | **Rol** 	|                 	|
 |:-------:	|:---------------:	|
-|  **id** 	| **rol** 	        |
+|  **id** 	| **namerol** 	        |
 |    1    	|    RepFrente    	|
 |    2    	|    Secretaria   	|
 |    3    	|  TribElectoral  	|
