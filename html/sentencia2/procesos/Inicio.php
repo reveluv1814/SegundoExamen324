@@ -1,5 +1,4 @@
 
-
     
     <h2>Inicio de flujo</h2>
     <h3>Proceso 1 </h3>

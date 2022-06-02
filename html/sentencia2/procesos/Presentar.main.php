@@ -3,6 +3,23 @@ session_start();
 ?>
 <h2>Bienvenido:&nbsp;&nbsp;&nbsp;<b><?php echo "".$_SESSION["id"]; ?></b></h2>
 
+<?php
+    $sql="select * from Frente where nusuario='".$_SESSION["id"]."'";
+    $resultado=pg_query($con,$sql);
+    $fila=pg_fetch_array($resultado);
+
+    $usuario= $fila["nusuario"];
+    $nombrefrente= $fila["nomfrente"];
+    $nomcandidato= $fila["nomcandidato"];
+    $cidentidad= $fila["ciidentidad"];
+    $cnacimiento= $fila["cnacimiento"];
+    $ctitulo= $fila["cantiguedad"];
+    $cantiguo= $fila["ctitulo"];
+?>
+
+
+
+
 <!-- estilo-->
 <style>
     h2{

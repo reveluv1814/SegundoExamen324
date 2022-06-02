@@ -1,12 +1,27 @@
     <h3>Proceso 2 </h3>
     <h4>Preparar Documentos y Requisitos</h4>
+
 <input type="hidden" name="id" value=""/><br>
-Nombre Completo
-<input type="text" name="nombrecompleto" value="<?php //echo $nombrecompleto; ?>"/><br>
-certificado de nacimiento:
-<input type="text" name="cnacimiento" value=""/><br>
-carnet de Identidad:
+
+<label for="nombrefrente">Nombre Frente</label>
+<input type="text" name="nombrefrente"><br>
+
+<label for="nomcandidato">Nombre Candidato</label>
+<input type="text" name="nomcandidato" value=""/><br>
+
+<label for="cidentidad">Num. Carnet de Identidad:</label>
 <input type="text" name="cidentidad" value=""/><br>
+
+<label for="cnacimiento">Num. Certificado de Nacimiento:</label>
+<input type="text" name="cnacimiento" value=""/><br>
+
+<label for="ctitulo">Num Titulo Universitario</label>
+<input type="text" class="form-control" name ="ctitulo"><br>
+
+<label for="cantiguedad">NUM Certificado Antigüedad</label>
+<input type="text" class="form-control" name ="cantiguedad">
+
+
 
 
 

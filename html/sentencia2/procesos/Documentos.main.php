@@ -1,5 +1,12 @@
 <?php
 session_start();
+$usuario=$_SESSION['id'];
+    if($usuario == null || $usuario == ''){
+        echo '<h1 style ="text-align:center;font-size:100px;">UPSSSS!</h1>';
+        echo '<h2 style ="text-align:center;font-size:90px;font-weight: 100;" >Usted No tiene un Usuario Asignado!</h2>';
+        die();
+}
+else{
 //cho "Hola: ".$_SESSION["id"];
 //echo "<br>";
 
@@ -12,6 +19,7 @@ $nombrecompleto=$fila["nombrecompleto"]*/
 
 <!-- estilo-->
 <style>
+    
     h2{
         padding: 30px;
         color: #fff;
@@ -19,6 +27,7 @@ $nombrecompleto=$fila["nombrecompleto"]*/
         width: 20%;
         border-radius: 40px;
         margin-left: 1%;
+        margin-top: 2%;
         font-weight: 100;
         font-size: 30px;
     }
@@ -26,3 +35,6 @@ $nombrecompleto=$fila["nombrecompleto"]*/
         background-color: #222831;
     }
 </style>
+<?php
+}
+?>

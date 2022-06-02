@@ -34,7 +34,7 @@ body {
 .nav .container-nav {
     padding: 22px 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 
 }
 .nav  #logo {

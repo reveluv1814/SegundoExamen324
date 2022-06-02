@@ -1,15 +1,25 @@
 <h3>Proceso 3 </h3>
 <h4>Presentar Inscripción</h4>
 <input type="hidden" name="id" value=""/>
-<span>
-    <input type="file" name="presentar" id="presentar" value=""/>
-</span>
-<label for="presentar">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-    <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
-    </svg>
-    <span>Selecciona Tu Documento</span>
-</label>
+<h4>Documentos Subidos</h4>
+<label for="nombrefrente">Nombre Frente</label>
+<input type="text" name="nombrefrente" value="<?php echo $nombrefrente; ?>"><br>
+
+<label for="nomcandidato">Nombre Candidato</label>
+<input type="text" name="nomcandidato" value="<?php echo $nomcandidato; ?>"/><br>
+
+<label for="cidentidad">Num. Carnet de Identidad:</label>
+<input type="text" name="cidentidad" value="<?php echo $cidentidad; ?>"/><br>
+
+<label for="cnacimiento">Num. Certificado de Nacimiento:</label>
+<input type="text" name="cnacimiento" value="<?php echo $cnacimiento; ?>"/><br>
+
+<label for="ctitulo">Num Titulo Universitario</label>
+<input type="text" name ="ctitulo" value="<?php echo $ctitulo; ?>"><br>
+
+<label for="cantiguedad">NUM Certificado Antigüedad</label>
+<input type="text" name ="cantiguedad" value="<?php echo $cantiguo; ?>">
+
 
 
 
@@ -47,7 +57,6 @@
         background-color: #106BA0;
         display: inline-block;
         transition: all .5s;
-        cursor: pointer;
         padding: 15px 40px !important;
         text-transform: uppercase;
         width: fit-content;
