@@ -5,12 +5,9 @@ include "header.php";
 //selecciona el flujo y el proceso
 $flujo=$_GET["flujo"];
 $proceso=$_GET["proceso"];
-if($proceso=="P6"){
-	
+if($proceso=="P6")
 	include "procesos/ProcesoCondicionante.php";
-}
-else{
-
+else{	
 $sql="select * from flujoproceso ";
 $sql.="where Flujo='$flujo' and proceso='$proceso'";
 $resultado=pg_query($con, $sql);
@@ -91,7 +88,7 @@ include "procesos/".$pantallalogica;
 	<h1>Flujo de Procesos</h1>
 	<div class="container">
 		<div class="containerPri">
-			<form action="motor.php" method="GET">
+			<form action="<?php if($procesoanterior=='P10'){echo 'procesos/FinProceso.php';}else{echo 'motor.php';}?>" method="GET">
 				<!--iframe src="pantalla.php"></iframe-->
 				<input type="hidden" name="flujo" value="<?php echo $flujo;?>"/>
 				<input type="hidden" name="proceso" value="<?php echo $proceso;?>"/>
