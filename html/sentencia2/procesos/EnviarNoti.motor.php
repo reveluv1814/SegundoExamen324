@@ -1,9 +1,23 @@
 <?php
 session_start();
 
+$descrip= $_GET["noti"];
+$estado= $_GET["estado"];
 
-/*$sql="update alumno set ";
-$sql.="cnacimiento='$cnacimiento', cidentidad='$cidentidad' ";
-$sql.=" where id=".$_SESSION["id"];
-$resultado=pg_query($con,$sql);*/
+$sql1="select id from usuario where nomusuario='".$_SESSION["tribunal"]."'";
+$r=pg_query($con,$sql1);
+$tri=pg_fetch_array($r);
+
+$sql2="select id from usuario where nomusuario='".$_SESSION["id"]."'";
+$u=pg_query($con,$sql2);
+$ur=pg_fetch_array($u);
+
+$noti= intval(trim($_GET["noti"]));
+$sql="insert into notifica (idtribunal, idusuario,descripcion) values(".$tri["id"].",".$ur["id"].",'$descrip')";
+$resultado=pg_query($con,$sql);
+
+
+$sql3="update notifica set estado ='$estado' where idtribunal=".$tri["id"];
+$r3=pg_query($con,$sql3);
+
 ?>

@@ -3,7 +3,11 @@
     
 ?>
 <h2>Bienvenido:&nbsp;&nbsp;&nbsp;<b><?php echo "".$_SESSION["tribunal"]; ?></b></h2>
-
+<?php
+    $sql="select * from Frente where nusuario='".$_SESSION["id"]."'";
+    $resultado=pg_query($con,$sql);
+    $fila=pg_fetch_array($resultado);
+?>
 <!-- estilo-->
 <style>
     h2{

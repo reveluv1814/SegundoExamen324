@@ -1,8 +1,22 @@
 <?php
     session_start();
-    
+  
 ?>
 <h2>Bienvenido:&nbsp;&nbsp;&nbsp;<b><?php echo "".$_SESSION["secretaria"]; ?></b></h2>
+
+<?php
+  
+    $sql="select idfrente,nomfrente from frente where nusuario ='".$_SESSION["id"]."'";
+    $resultado=pg_query($con,$sql);
+    $fila=pg_fetch_array($resultado);
+    $idfrente= $fila["idfrente"];
+    $nombrefrente = $fila["nomfrente"];
+?>
+
+
+
+
+
 
 <!-- estilo-->
 <style>
@@ -21,6 +35,7 @@
         background-color: #222831;
     }
 </style>
+
 <?php
     
     unset($_SESSION['secretaria']);

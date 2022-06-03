@@ -1,6 +1,12 @@
 <?php
+    if(isset($_GET["Anterior"]))
+    {       
+        header("Location: ../principal.php?flujo=F1&proceso=P9");
+    }
+    else{
     session_start();
     session_destroy();
+    }
 ?>
 <h1>Fin</h1>
 

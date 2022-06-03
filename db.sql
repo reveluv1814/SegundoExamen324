@@ -11,8 +11,12 @@ create table FlujoProcesoCondicionante(
     Flujo VARCHAR(3),
     Proceso VARCHAR(3),
     ProcesoSI VARCHAR(3),
-    ProcesoNO VARCHAR(3)
+    ProcesoSISig VARCHAR(3),
+    ProcesoNO VARCHAR(3),
+    ProcesoNOSig VARCHAR(3),
+    estado VARCHAR(3)
 );
+ 
 create table FlujoProcesoSeguimiento
 (
     Flujo VARCHAR(3),
@@ -36,6 +40,7 @@ insert into FlujoProceso values('F1','P8','P9','P','ControlDocumentos','TribElec
 insert into FlujoProceso values('F1','P9','P10','P','EnviarNoti','TribElectoral');
 insert into FlujoProceso values('F1','P10',null,'P','RecibeNotifi','RepFrente');
 
+insert into flujoprocesocondicionante values('F1','P5','P6','P8','P7','P9');
 create table Usuario
 (
     id int,
@@ -68,6 +73,7 @@ insert into RolUsuario values(1,2);
 insert into RolUsuario values(1,3);
 insert into RolUsuario values(2,4);
 insert into RolUsuario values(3,5);
+/*////////////////////////////*/
 create table Frente
 (
     IdFrente serial,
@@ -80,6 +86,24 @@ create table Frente
     Ctitulo VARCHAR(25),
     constraint PK_Frente primary key (IdFrente)
 );
-DROP Table frente
 
-SELECT * from frente
+
+create table Entrega
+(
+    IdEntrega serial,
+    IdFrente int,
+    horaEntrega TIME,
+    Fecha DATE,
+    constraint PK_Entrega primary key (IdEntrega)
+);
+
+create table Notifica
+(
+    estado VARCHAR(15),
+    idtribunal int,
+    idusuario int,
+    descripcion VARCHAR(100)
+);
+/*DROP Table frente
+
+SELECT * from rol*/

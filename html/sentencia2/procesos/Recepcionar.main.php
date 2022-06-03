@@ -16,13 +16,6 @@
     $fila=pg_fetch_array($resultado);
 
 
-    /*$usuario= $fila["nusuario"];
-    $nombrefrente= $fila["nomfrente"];
-    $nomcandidato= $fila["nomcandidato"];
-    $cidentidad= $fila["ciidentidad"];
-    $cnacimiento= $fila["cnacimiento"];
-    $ctitulo= $fila["cantiguedad"];
-    $cantiguo= $fila["ctitulo"];*/
 ?>
 
 
