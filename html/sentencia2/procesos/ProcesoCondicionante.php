@@ -48,7 +48,7 @@
             
             <input type="checkbox" name="procesosi" value="value1">
             <label for="procesosi">SI Cumplió</label><br>
-            <input type="checkbox" name="procesono" value="value2">
+            <input class="nop" type="checkbox" name="procesono" value="value2">
             <label for="procesono">NO Cumplió</label><br>
             <input class="enviar" type="submit" value="Submit"> 
         </div>
@@ -187,6 +187,9 @@
     }
     input:checked {
         box-shadow: 0 0 0 3px #5FD068;
+    }
+    .nop:checked{
+        box-shadow: 0 0 0 3px #EB5353;
     }
     input:checked + label {
         font-weight: 600;

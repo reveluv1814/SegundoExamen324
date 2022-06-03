@@ -4,7 +4,7 @@
 <h4>Estos Documentos serán Subidos Al Sistema</h4>
 
 <div class="containertb">
-    <p class="titulon">Los Documentos Que entrego:</p>  
+    <p class="titulon">Los Documentos que Entrego el Representante del Frente:</p>  
     <table class="table">
         <thead>
             <th><b>Nombre Usuario</b></th>

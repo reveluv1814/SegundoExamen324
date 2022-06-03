@@ -1,7 +1,10 @@
 <h3>Proceso 9 </h3>
     <h4>Enviar Notificación de la Inscripción</h4>
-    <label for="idfrente">Descripción de la Notificación</label>
-    <input type="text" name="noti" value="" ><br>
+    <label for="">Descripción de la Notificación </label><br>
+    <label for="">&nbsp;&nbsp;&nbsp;&nbsp;Escribe la Notificación</label>
+    <div class="connoti">
+        <textarea class="descri" name="noti" id="" cols="30" rows="10"></textarea><br>
+    </div>    
     <input type="hidden" name="estado" value="<?php 
         $sql1="select estado from flujoprocesocondicionante where flujo= 'F1'";
         $r=pg_query($con,$sql1);
@@ -25,9 +28,10 @@
     }
     label{
         font-size: 25px;
-        margin-right: 23px;
+        margin-left: 25%;
         color:#3A4750;
         font-weight: 100;
+        text-align: center;
     }
     input{
     width: 20%;
@@ -41,5 +45,21 @@
     }
     input:focus {
     border: 3px solid #555;
+    }
+    .connoti{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .descri{
+        resize: none;
+        border-radius: 20px;
+        padding: 20px;
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+        color: #393E46;
+        font-weight: 800;
+        text-align: justify;
+        box-shadow: 0px 6px 20px -5px rgba(143,140,140,0.75);
     }
 </style>

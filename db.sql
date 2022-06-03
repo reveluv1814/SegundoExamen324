@@ -4,7 +4,7 @@ create table FlujoProceso(
     ProcesoSiguiente VARCHAR(3),
     Tipo VARCHAR(1),
     Pantalla VARCHAR(20),
-    Rol VARCHAR(20),
+    Rol VARCHAR(20)
 );
 
 create table FlujoProcesoCondicionante(
