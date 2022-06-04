@@ -1,24 +1,23 @@
 <h3>Proceso 3 </h3>
 <h4>Presentar Inscripción</h4>
 <input type="hidden" name="id" value=""/>
-<h4>Documentos Subidos</h4>
-<label for="nombrefrente">Nombre Frente</label>
-<input type="text" name="nombrefrente" value="<?php echo $nombrefrente; ?>"><br>
+<div class="formu">
+<h5 class="titu">Documentos Subidos</h5>
+<h6>Revisa los Documentos que preparaste para Entregarlo a la Secretaria.</h6>
+<p type="Nombre Frente:"><input type="text" name="nombrefrente" value="<?php echo $nombrefrente; ?>"></p>
 
-<label for="nomcandidato">Nombre Candidato</label>
-<input type="text" name="nomcandidato" value="<?php echo $nomcandidato; ?>"/><br>
+<p type="Nombre Candidato:"><input type="text" name="nomcandidato" value="<?php echo $nomcandidato; ?>"></p>
 
-<label for="cidentidad">Num. Carnet de Identidad:</label>
-<input type="text" name="cidentidad" value="<?php echo $cidentidad; ?>"/><br>
+<p type="Num. Carnet de Identidad:"><input type="text" name="cidentidad" value="<?php echo $cidentidad; ?>"></p>
 
-<label for="cnacimiento">Num. Certificado de Nacimiento:</label>
-<input type="text" name="cnacimiento" value="<?php echo $cnacimiento; ?>"/><br>
+<p type="Num. Certificado de Nacimiento:"><input type="text" name="cnacimiento" value="<?php echo $cnacimiento; ?>"></p>
 
-<label for="ctitulo">Num Titulo Universitario</label>
-<input type="text" name ="ctitulo" value="<?php echo $ctitulo; ?>"><br>
+<p type="Num. Titulo Universitario:"><input type="text" name="ctitulo" value="<?php echo $ctitulo; ?>"></p>
 
-<label for="cantiguedad">NUM Certificado Antigüedad</label>
-<input type="text" name ="cantiguedad" value="<?php echo $cantiguo; ?>">
+<p type="Num Certificado Antigüedad:"><input type="text" name="cantiguedad" value="<?php echo $cantiguo; ?>"></p>
+
+
+</div>
 
 
 
@@ -38,33 +37,58 @@
         text-align: center;
         color: #3A4750;
     }
-    #presentar{
-        width: 0.1px;
-        height: 0.1px;
-        opacity: 0;
-        overflow: hidden;
-        position: absolute;
-        z-index: -1;
+    h6{
+        font-size: 18px;
+        color: #393E46;
     }
-    svg{
-        
-        width: 30px;
+    .formu{
+        width:540px;
+        height:auto;
+        background:#EEEEEE;
+        border-radius:8px;
+        box-shadow:0 0 40px -10px #000;
+        margin:calc(26vh - 220px) auto;
+        padding:20px 30px;
+        padding-bottom: 50px;
+        max-width:calc(100vw - 40px);
+        box-sizing:border-box;
+        font-family:'Poppins',sans-serif;
+        position:relative
     }
-    label{
-        font-size: 14px;
-        font-weight: 600;
-        color: #fff;
-        background-color: #106BA0;
-        display: inline-block;
-        transition: all .5s;
-        padding: 15px 40px !important;
-        text-transform: uppercase;
-        width: fit-content;
-        text-align: center;
-        margin-left: 25%;
-        margin-bottom: 20px;
-        margin-top: 20px;
-        border-radius: 20px;
-        box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+    input{
+        width:100%;
+        padding:10px;
+        box-sizing:border-box;
+        background:none;
+        outline:none;
+        resize:none;
+        border:0;
+        font-family:'Poppins',sans-serif;
+        transition:all .3s;
+        border-bottom:2px solid #bebed2;
+        color: #393E46;
+    }
+    input:focus{
+        border-bottom:2px solid #78788c;
+    }
+    input::-ms-value{
+        color: #393E46;
+        font-size:15px;
+    }
+    p:before{
+        content:attr(type);
+        display:block;
+        margin:28px 0 0;
+        font-size:20px;
+        color:#393E46;
+        font-weight: 100;
+    }
+    h5{
+        margin:10px 0;
+        padding-bottom:10px;
+        width:280px;
+        color:#393E46;
+        border-bottom:3px solid #78788c;
+        font-size: 25px;
     }
 </style>

@@ -11,8 +11,8 @@
     <!--<link rel="stylesheet" href="./css/style.css?1.0">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/png"  href="imagenes/logoicon.png" sizes="30x30" >
-    <title>FCPN INF-324</title>
+    <link rel="icon" type="image/png"  href="imagenes/logo3.png" sizes="70x30" >
+    <title>WORKFLOW</title>
     
     </head>
 <body>
