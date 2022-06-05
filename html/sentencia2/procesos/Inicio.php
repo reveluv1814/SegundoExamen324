@@ -3,6 +3,7 @@
     <h2>Inicio de flujo</h2>
     <h3>Proceso 1 </h3>
     <h4>Averiguar la fecha de plazo de entrega de documentos</h4>
+    <h5>Debes Introducir tu ID para verificar que estas en la lista de Usuarios</h5>
     
     <div class="container">
     <label>Introduzca su ID: </label>
@@ -33,10 +34,16 @@
         color: #3A4750;
     }
     label{
-        font-size: 25px;
+        font-size: 30px;
         margin-right: 23px;
         color:#3A4750;
         font-weight: 100;
+    }
+    h5{
+        font-weight: 100;
+        color:#3A4750;
+        text-align: center;
+        font-size: 25px;
     }
     input{
     width: 20%;

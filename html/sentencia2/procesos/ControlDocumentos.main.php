@@ -7,6 +7,14 @@
     $sql="select * from Frente where nusuario='".$_SESSION["id"]."'";
     $resultado=pg_query($con,$sql);
     $fila=pg_fetch_array($resultado);
+
+    $sql2="select idfrente from Frente where nusuario='".$_SESSION["id"]."'";
+    $resultado1=pg_query($con,$sql2);
+    $fila1=pg_fetch_array($resultado1);
+
+    $sql1="insert into flujoprocesoseguimiento (flujo, proceso,numerosolicitud, usuario, fechainicio, horainicio) values('F1','P8',".$fila1["idfrente"]." , '".$_SESSION["tribunal"]."','".date('d-m-Y')."', '".date('H:i:s')."')";
+    $r=pg_query($con,$sql1);
+
 ?>
 <!-- estilo-->
 <style>

@@ -4,16 +4,8 @@
                 
                 <div id="textcontact">
                     
-                    <h3>Dirección de visita</h3>
-                    <h4>Nos encontramos en:</h4>
-                    <div id="contenidocontacto">
-                        <p><i class="fas fa-map-marker-alt"></i>Av. Villazón N° 1995, Plaza del Bicentenario – Zona Central<br>
-                        <i class="fab fa-facebook"></i>Facebook: Dame_unaPata <br>    
-                        <i class="fas fa-phone-square"></i>Telf: 261-2901/2440571 <br>
-                        <i class="fas fa-envelope"></i>Correo: decanato@fcpn.edu.bo <br>
-                        </p>
-                        <h5>Cualquier donación nos ayudaría</h5>
-                    </div>
+                    <h3>Flujo de Procesos </h3>
+                    <h4>Procesos para la Inscripción y Recepción de Frentes a la Dirección de la Carrera de Informática</h4>
                 </div>
             </div>
         </section>

@@ -19,14 +19,16 @@ create table FlujoProcesoCondicionante(
  
 create table FlujoProcesoSeguimiento
 (
+    idflujoseg SERIAL,
     Flujo VARCHAR(3),
-    Proceso VARCHAR(3),
+    Proceso VARCHAR(23),
     NumeroSolicitud int,
     Usuario VARCHAR(15),
     FechaInicio DATE,
     HoraInicio TIME,
     FechaFin DATE,
-    HoraFin TIME
+    HoraFin TIME,
+    constraint PK_FlujoProcesoSeguimiento primary key (idflujoseg)
 );
 
 insert into FlujoProceso values('F1','P1','P2','I','Inicio','RepFrente');

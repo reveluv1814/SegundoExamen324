@@ -15,6 +15,15 @@ session_start();
     $cnacimiento= $fila["cnacimiento"];
     $ctitulo= $fila["cantiguedad"];
     $cantiguo= $fila["ctitulo"];
+
+
+
+    $sql1="select idfrente from Frente where nusuario='".$_SESSION["id"]."'";
+    $resultado1=pg_query($con,$sql1);
+    $fila=pg_fetch_array($resultado1);
+
+    $sql1="insert into flujoprocesoseguimiento (flujo, proceso,numerosolicitud, usuario, fechainicio, horainicio) values('F1','P3',".$fila["idfrente"]." , '".$_SESSION["id"]."','".date('d-m-Y')."', '".date('H:i:s')."')";
+    $r=pg_query($con,$sql1);
 ?>
 
 

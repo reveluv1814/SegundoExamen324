@@ -11,6 +11,11 @@
     $fila=pg_fetch_array($resultado);
     $idfrente= $fila["idfrente"];
     $nombrefrente = $fila["nomfrente"];
+
+    
+    $sql1="insert into flujoprocesoseguimiento (flujo, proceso,numerosolicitud, usuario, fechainicio, horainicio) values('F1','P5',$idfrente, '".$_SESSION["secretaria"]."','".date('d-m-Y')."', '".date('H:i:s')."')";
+    $r=pg_query($con,$sql1);
+
 ?>
 
 

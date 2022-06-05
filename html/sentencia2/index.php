@@ -1,3 +1,7 @@
+<?php
+    session_start(); 
+    session_destroy();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +27,7 @@
 		<input type="hidden" name="proceso" value="P1"/>
 		
 		<input type="submit" name="Iniciar" value="Iniciar"/>--> 
-
+       
         <div class="titulo"><h1>Flujo de proceso</h1></div>
         <div class="login-form">
             <div id="logo"><img src="imagenes/logo3.png" alt=""  style="width:390px;margin-bottom:20px;"></div>

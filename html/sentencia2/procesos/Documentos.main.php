@@ -29,5 +29,7 @@ else{
     }
 </style>
 <?php
+$sql="insert into flujoprocesoseguimiento (flujo, proceso, usuario, fechainicio, horainicio) values('F1','P2', '".$_SESSION["id"]."','".date('d-m-Y')."', '".date('H:i:s')."')";
+$resultado=pg_query($con,$sql);
 }
 ?>

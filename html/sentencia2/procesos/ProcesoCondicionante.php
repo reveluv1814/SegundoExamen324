@@ -1,11 +1,21 @@
 <?php
+
     session_start();
+    $con = pg_connect("host=postgres port=5432 dbname=mibaseneil user=neil password=admin");
 
     $sql="select u.Nomusuario from Usuario u, Rol r, RolUsuario rl where u.id = rl.idusuario and r.idrol = rl.idrol and r.namerol = 'TribElectoral'";
     $resultado=pg_query($con,$sql);
     $fila=pg_fetch_array($resultado);
 
     $_SESSION["tribunal"]=$fila['nomusuario'];
+
+
+    $sql2="select idfrente from Frente where nusuario='".$_SESSION["id"]."'";
+    $resultado1=pg_query($con,$sql2);
+    $fila1=pg_fetch_array($resultado1);
+
+    $sql1="insert into flujoprocesoseguimiento (flujo, proceso,numerosolicitud, usuario, fechainicio, horainicio) values('F1','ProcesoCondicionante',".$fila1["idfrente"]." , '".$_SESSION["tribunal"]."','".date('d-m-Y')."', '".date('H:i:s')."')";
+    $r=pg_query($con,$sql1);
 ?>
 <h2>Bienvenido:&nbsp;&nbsp;&nbsp;<b><?php echo "".$_SESSION["tribunal"]; ?></b></h2>
 <h1>Flujo de Proceso Condicionante</h1>
