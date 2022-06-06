@@ -1,0 +1,20 @@
+c:\users\moises\documents\visual studio 2012\Projects\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe.config
+c:\users\moises\documents\visual studio 2012\Projects\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
+c:\users\moises\documents\visual studio 2012\Projects\WindowsFormsApplication8\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
+c:\users\moises\documents\visual studio 2012\Projects\WindowsFormsApplication8\WindowsFormsApplication8\obj\Debug\WindowsFormsApplication8.csprojResolveAssemblyReference.cache
+c:\users\moises\documents\visual studio 2012\Projects\WindowsFormsApplication8\WindowsFormsApplication8\obj\Debug\WindowsFormsApplication8.Form1.resources
+c:\users\moises\documents\visual studio 2012\Projects\WindowsFormsApplication8\WindowsFormsApplication8\obj\Debug\WindowsFormsApplication8.Properties.Resources.resources
+c:\users\moises\documents\visual studio 2012\Projects\WindowsFormsApplication8\WindowsFormsApplication8\obj\Debug\WindowsFormsApplication8.csproj.GenerateResource.Cache
+c:\users\moises\documents\visual studio 2012\Projects\WindowsFormsApplication8\WindowsFormsApplication8\obj\Debug\WindowsFormsApplication8.exe
+c:\users\moises\documents\visual studio 2012\Projects\WindowsFormsApplication8\WindowsFormsApplication8\obj\Debug\WindowsFormsApplication8.pdb
+D:\Examen324-1\SegundoExamen324\sentencia3\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe.config
+D:\Examen324-1\SegundoExamen324\sentencia3\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.exe
+D:\Examen324-1\SegundoExamen324\sentencia3\WindowsFormsApplication8\bin\Debug\WindowsFormsApplication8.pdb
+D:\Examen324-1\SegundoExamen324\sentencia3\WindowsFormsApplication8\obj\Debug\WindowsFormsApplication8.csproj.AssemblyReference.cache
+D:\Examen324-1\SegundoExamen324\sentencia3\WindowsFormsApplication8\obj\Debug\WindowsFormsApplication8.csproj.SuggestedBindingRedirects.cache
+D:\Examen324-1\SegundoExamen324\sentencia3\WindowsFormsApplication8\obj\Debug\WindowsFormsApplication8.Form1.resources
+D:\Examen324-1\SegundoExamen324\sentencia3\WindowsFormsApplication8\obj\Debug\WindowsFormsApplication8.Properties.Resources.resources
+D:\Examen324-1\SegundoExamen324\sentencia3\WindowsFormsApplication8\obj\Debug\WindowsFormsApplication8.csproj.GenerateResource.cache
+D:\Examen324-1\SegundoExamen324\sentencia3\WindowsFormsApplication8\obj\Debug\WindowsFormsApplication8.csproj.CoreCompileInputs.cache
+D:\Examen324-1\SegundoExamen324\sentencia3\WindowsFormsApplication8\obj\Debug\WindowsFormsApplication8.exe
+D:\Examen324-1\SegundoExamen324\sentencia3\WindowsFormsApplication8\obj\Debug\WindowsFormsApplication8.pdb
