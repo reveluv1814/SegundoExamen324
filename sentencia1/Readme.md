@@ -6,7 +6,7 @@
 ### DIAGRAMA DE FLUJO DE PROCESOS
 ![](Examen324_Modelo1.png)
 ### DIAGRAMA BPMN 
-![](Examen324_2.png)
+![](Examen324_Modelo1.png)
 
 
 
