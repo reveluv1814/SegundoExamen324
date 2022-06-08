@@ -28,10 +28,14 @@ namespace WindowsFormsApplication8
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            almacenar.Enabled = false;
+            buttonTextura.Enabled = false;
+            actualizar.Enabled = false;
         }
         private void cargar_Click(object sender, EventArgs e)
         {
+            almacenar.Enabled = true;
+            buttonTextura.Enabled = true;
             if(tupleList.Count == 0){
                 openFileDialog1.Filter = "Todos *.*|";
                 openFileDialog1.ShowDialog();
@@ -125,8 +129,15 @@ namespace WindowsFormsApplication8
                     string p = "";
                     int u = var.pixelA.Dequeue();
                     int v = var.pixelB.Dequeue();
-                    p = u + ";" + v + "";
-                    mostrar1.Items.Add(p);
+                    p = "Pixel X: " + u + "; Pixel Y: " + v + "";
+
+                    if (var.indice == 0)
+                        mostrar1.Items.Add(p);
+                    else if (var.indice == 1)
+                        mostrar2.Items.Add(p);
+                    else mostrar3.Items.Add(p);
+
+                    //mostrar1.Items.Add(p);
 
                     var.pixelA.Enqueue(u);
                     var.pixelB.Enqueue(v);
@@ -185,6 +196,7 @@ namespace WindowsFormsApplication8
             Textura1 t = textura.Dequeue();
             tupleList.Enqueue(Tuple.Create(bmpR, t));
             textura.Enqueue(t);
+            actualizar.Enabled = true;
         }
 
         /*private void button7_Click(object sender, EventArgs e)

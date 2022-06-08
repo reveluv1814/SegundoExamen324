@@ -51,7 +51,9 @@
             this.label7 = new System.Windows.Forms.Label();
             this.mostrar2 = new System.Windows.Forms.ListBox();
             this.mostrar3 = new System.Windows.Forms.ListBox();
-            this.numk = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -142,6 +144,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(201)))), ((int)(((byte)(192)))));
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Location = new System.Drawing.Point(188, 230);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(450, 450);
@@ -153,6 +156,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(201)))), ((int)(((byte)(192)))));
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Location = new System.Drawing.Point(651, 230);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(450, 450);
@@ -197,10 +201,13 @@
             // 
             // mostrar1
             // 
+            this.mostrar1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mostrar1.Font = new System.Drawing.Font("Quicksand Medium", 8.25F, System.Drawing.FontStyle.Bold);
             this.mostrar1.FormattingEnabled = true;
-            this.mostrar1.Location = new System.Drawing.Point(213, 723);
+            this.mostrar1.ItemHeight = 16;
+            this.mostrar1.Location = new System.Drawing.Point(294, 736);
             this.mostrar1.Name = "mostrar1";
-            this.mostrar1.Size = new System.Drawing.Size(182, 95);
+            this.mostrar1.Size = new System.Drawing.Size(182, 98);
             this.mostrar1.TabIndex = 16;
             // 
             // label4
@@ -311,29 +318,58 @@
             // 
             // mostrar2
             // 
+            this.mostrar2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mostrar2.Font = new System.Drawing.Font("Quicksand Medium", 8.25F, System.Drawing.FontStyle.Bold);
             this.mostrar2.FormattingEnabled = true;
-            this.mostrar2.Location = new System.Drawing.Point(431, 723);
+            this.mostrar2.ItemHeight = 16;
+            this.mostrar2.Location = new System.Drawing.Point(519, 736);
             this.mostrar2.Name = "mostrar2";
-            this.mostrar2.Size = new System.Drawing.Size(182, 95);
+            this.mostrar2.Size = new System.Drawing.Size(182, 98);
             this.mostrar2.TabIndex = 24;
             // 
             // mostrar3
             // 
+            this.mostrar3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mostrar3.Font = new System.Drawing.Font("Quicksand Medium", 8.25F, System.Drawing.FontStyle.Bold);
             this.mostrar3.FormattingEnabled = true;
-            this.mostrar3.Location = new System.Drawing.Point(651, 723);
+            this.mostrar3.ItemHeight = 16;
+            this.mostrar3.Location = new System.Drawing.Point(741, 736);
             this.mostrar3.Name = "mostrar3";
-            this.mostrar3.Size = new System.Drawing.Size(182, 95);
+            this.mostrar3.Size = new System.Drawing.Size(182, 98);
             this.mostrar3.TabIndex = 25;
             // 
-            // numk
+            // label8
             // 
-            this.numk.AutoSize = true;
-            this.numk.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.numk.Location = new System.Drawing.Point(406, 446);
-            this.numk.Name = "numk";
-            this.numk.Size = new System.Drawing.Size(35, 13);
-            this.numk.TabIndex = 26;
-            this.numk.Text = "label8";
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Quicksand Medium", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label8.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label8.Location = new System.Drawing.Point(327, 699);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(116, 28);
+            this.label8.TabIndex = 26;
+            this.label8.Text = "Textura #1";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Quicksand Medium", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label9.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label9.Location = new System.Drawing.Point(548, 699);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(119, 28);
+            this.label9.TabIndex = 27;
+            this.label9.Text = "Textura #2";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Quicksand Medium", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label10.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label10.Location = new System.Drawing.Point(739, 699);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(184, 28);
+            this.label10.TabIndex = 28;
+            this.label10.Text = "Textura #3 o Más";
             // 
             // Form1
             // 
@@ -341,7 +377,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(43)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(1113, 858);
-            this.Controls.Add(this.numk);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.mostrar3);
             this.Controls.Add(this.mostrar2);
             this.Controls.Add(this.label7);
@@ -359,7 +397,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "255";
+            this.Text = "Sentencia 3";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -396,7 +434,9 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ListBox mostrar2;
         private System.Windows.Forms.ListBox mostrar3;
-        private System.Windows.Forms.Label numk;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
     }
 }
 
