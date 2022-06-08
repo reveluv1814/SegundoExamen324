@@ -41,7 +41,3 @@
     }
 </style>
 
-<?php
-    
-    unset($_SESSION['secretaria']);
-?>
