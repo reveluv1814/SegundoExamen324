@@ -16,6 +16,7 @@ namespace WindowsFormsApplication8
         int pR, pG, pB;
         int sensibilidad =50;
         Queue<Textura1> textura = new Queue<Textura1>();
+        private Random rnd = new Random();
 
 
         int indice = 0;
@@ -149,10 +150,9 @@ namespace WindowsFormsApplication8
         {
             int mR = 0, mG = 0, mB = 0;
             Color c = new Color();
-            var ran = new Random();
-            int ur = ran.Next(0,255);
-            int ug = ran.Next(0,255);
-            int ub = ran.Next(0,255);
+            int ur = rnd.Next(256);
+            int ug = rnd.Next(256);
+            int ub = rnd.Next(256);
             Bitmap bmpR = new Bitmap(bmp.Width, bmp.Height);
             for (int i = 0; i < bmp.Width - 10; i = i + 10)
                 for (int j = 0; j < bmp.Height - 10; j = j + 10)
@@ -177,7 +177,7 @@ namespace WindowsFormsApplication8
                     {
                         for (int ki = i; ki < i + 10; ki++)
                             for (int kj = j; kj < j + 10; kj++)
-                                bmpR.SetPixel(ki, kj, Color.Fuchsia);//bmpR.SetPixel(i, j, Color.FromArgb(35, 155, 86));
+                                bmpR.SetPixel(ki, kj, Color.FromArgb(ur, ug, ub)); //Color.Fuchsia);//bmpR.SetPixel(i, j, Color.FromArgb(35, 155, 86));
                     }
                     else
                     {
@@ -198,62 +198,5 @@ namespace WindowsFormsApplication8
             textura.Enqueue(t);
             actualizar.Enabled = true;
         }
-
-        /*private void button7_Click(object sender, EventArgs e)
-        {
-            int mR = 0, mG = 0, mB = 0;
-            Queue<int> pixel1 = new Queue<int>();
-            Queue<int> pixel2 = new Queue<int>();
-
-
-            Color c = new Color();
-            Bitmap bmpR = new Bitmap(bmp.Width, bmp.Height);
-            for (int i = 0; i < bmp.Width-10; i=i+10)
-                for (int j = 0; j < bmp.Height-10; j=j+10)
-                {
-                    mR = 0;
-                    mG = 0;
-                    mB = 0; 
-                    for (int ki = i; ki<i+10; ki++)
-                        for (int kj = j; kj<j+10; kj++)
-                        {
-                            c = bmp.GetPixel(ki, kj);
-                            mR = mR + c.R;
-                            mG = mG + c.G;
-                            mB = mB + c.B;
-                        }
-                    mR = mR / 100;
-                    mG = mG / 100;
-                    mB = mB / 100;
-
-                    c = bmp.GetPixel(i, j);
-                    if ((pR - sensibilidad <= mR && mR <= pR + sensibilidad) && (pG - sensibilidad <= mG && mG <= pG + sensibilidad) && (pB - sensibilidad <= mB && mB <= pB + sensibilidad))
-                    {
-                        for (int ki = i; ki < i + 10; ki++)
-                            for (int kj = j; kj < j + 10; kj++)
-                            {
-                                pixel1.Enqueue(ki);
-                                pixel2.Enqueue(kj);
-                            }
-                    }
-                }
-
-            textura.Enqueue(new Textura1(indice,pixel1,pixel2));
-            indice++;
-            foreach (Textura1 var in textura)
-            {
-                for (int i = 0; i < var.pixelA.Count; i++)
-                {
-                    string p = "";
-                    int u = var.pixelA.Dequeue();
-                    int v = var.pixelB.Dequeue();
-                    p = u+ ";"+v+"";
-                    listBox1.Items.Add(p);
-                    var.pixelA.Enqueue(u);
-                    var.pixelB.Enqueue(v);
-                }
-            }
-
-        }*/
     }
 }
