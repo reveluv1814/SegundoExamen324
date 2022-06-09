@@ -77,12 +77,14 @@
 |  cNacimiento 	|
 |  Cantiguedad 	|
 |    Ctitulo   	|
+
 | **Entrega** 	|
 |:-----------:	|
 |  IdEntrega  	|
 |   IdFrente  	|
 | horaEntrega 	|
 |    Fecha    	|
+
 | **Notifica** 	|
 |:------------:	|
 |    estado    	|
