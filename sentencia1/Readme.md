@@ -9,7 +9,7 @@
 ![](sentencia1_BPMN.png)
 
 
-
+### Tablas a Introducir en la BD.
 
 | **FlujoProceso** 	|             	|                      	|          	|                   	|               	|
 |:----------------:	|:-----------:	|:--------------------:	|:--------:	|:-----------------:	|:-------------:	|
@@ -40,13 +40,7 @@
 | **FlujoProcesoSeguimiento** 	|             	|                     	|             	|                 	|                	|              	|             	|
 |:---------------------------:	|:-----------:	|:-------------------:	|:-----------:	|:---------------:	|:--------------:	|:------------:	|:-----------:	|
 |          **Flujo**          	| **Proceso** 	| **NumeroSolicitud** 	| **Usuario** 	| **FechaInicio** 	| **HoraInicio** 	| **FechaFin** 	| **HoraFin** 	|
-|              F1             	|      P1     	|         1000        	|    msilva   	|    20/4/2022    	|      10:00     	|   20/4/2022  	|    14:00    	|
-|              F1             	|      P2     	|         1000        	|    msilva   	|    20/4/2022    	|      14:01     	|   22/4/2022  	|    10:00    	|
-|              F1             	|      P3     	|         1000        	|    msilva   	|    22/4/2022    	|      10:01     	|              	|             	|
-|              F2             	|      P1     	|         2020        	|    msilva   	|    20/4/2022    	|      10:10     	|   21/4/2022  	|    11:10    	|
-|              F2             	|      P2     	|         2020        	|    msilva   	|    21/4/2022    	|      11:11     	|              	|             	|
-|              F1             	|      P1     	|         1010        	|  jhuaranca  	|    11/4/2022    	|      09:00     	|   11/4/2022  	|    09:10    	|
-|              F1             	|      P2     	|          10         	|  jhuaranca  	|    11/4/2022    	|      09:11     	|              	|             	|
+
 
 
 
@@ -73,9 +67,25 @@
 |        1       	|       2       	|
 |        2       	|       3       	|
 
-el candidato        tribunal electoral
- diagrama de procesoso
-
-rep frente recepciona llenar requisitos notificara revisan not
-
-motor motor interno 
+|  **Frente**  	|
+|:------------:	|
+|   IdFrente   	|
+|   nusuario   	|
+|   nomFrente  	|
+| nomCandidato 	|
+|  ciIdentidad 	|
+|  cNacimiento 	|
+|  Cantiguedad 	|
+|    Ctitulo   	|
+| **Entrega** 	|
+|:-----------:	|
+|  IdEntrega  	|
+|   IdFrente  	|
+| horaEntrega 	|
+|    Fecha    	|
+| **Notifica** 	|
+|:------------:	|
+|    estado    	|
+|  idtribunal  	|
+|   idusuario  	|
+|  descripcion 	|
